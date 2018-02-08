@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="YH">
 <meta property="og:description" content="GitHub: SolarNetwork 前言刚开始写Swift项目时，用到网络请求时，毫无疑问，选择了Moya。但随着项目的增大，接口越来越多，TargetType文件也越来越大，寻找某一个接口的参数和其他配置时，就要在各种Switch中跳来跳去，感到十分烦恼，就算分了多个TargetType，也还是存在这个问题，于是就干脆借鉴Moya的优点，基于Alamofire重新封装了一个简单易用的网络库">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-08T09:23:16.772Z">
+<meta property="og:updated_time" content="2018-02-08T09:24:43.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SolarNetwork-优雅的Swift网络封装">
 <meta name="twitter:description" content="GitHub: SolarNetwork 前言刚开始写Swift项目时，用到网络请求时，毫无疑问，选择了Moya。但随着项目的增大，接口越来越多，TargetType文件也越来越大，寻找某一个接口的参数和其他配置时，就要在各种Switch中跳来跳去，感到十分烦恼，就算分了多个TargetType，也还是存在这个问题，于是就干脆借鉴Moya的优点，基于Alamofire重新封装了一个简单易用的网络库">
@@ -326,16 +326,16 @@
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">SLNetwork</span>(<span class="type">SLTarget</span>).request(<span class="type">SLRequest</span>)</span><br><span class="line">                   .progressClosure(<span class="type">SLProgress</span>)</span><br><span class="line">                   .completionClosure(<span class="type">SLResponse</span>)</span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
-<li style="list-style: none"><input type="checkbox" checked> 灵活的多服务配置(baseURL, Header, ParameterEncoding, URLSessionConfiguration, TSL……)</li>
-<li style="list-style: none"><input type="checkbox" checked> 完整的数据请求方法</li>
-<li style="list-style: none"><input type="checkbox" checked> 完整的下载和断点下载方法(意外退出也能恢复)</li>
-<li style="list-style: none"><input type="checkbox" checked> 完整的上传方法：File, Data, InputStream, FormData</li>
-<li style="list-style: none"><input type="checkbox" checked> 上传和下载的进度回调</li>
-<li style="list-style: none"><input type="checkbox" checked> 网络状态Reachability回调</li>
-<li style="list-style: none"><input type="checkbox" checked> 保留Alamofire的对外API</li>
-<li style="list-style: none"><input type="checkbox" checked> 修改Request和Response的Plugin</li>
-<li style="list-style: none"><input type="checkbox" checked> Swift4下利用Decodable将JSON转为Model</li>
-<li style="list-style: none"><input type="checkbox" checked> 完整的日志打印</li>
+<li>灵活的多服务配置(baseURL, Header, ParameterEncoding, URLSessionConfiguration, TSL……)</li>
+<li>完整的数据请求方法</li>
+<li>完整的下载和断点下载方法(意外退出也能恢复)</li>
+<li>完整的上传方法：File, Data, InputStream, FormData</li>
+<li>上传和下载的进度回调</li>
+<li>网络状态Reachability回调</li>
+<li>保留Alamofire的对外API</li>
+<li>修改Request和Response的Plugin</li>
+<li>Swift4下利用Decodable将JSON转为Model</li>
+<li>完整的日志打印</li>
 </ul>
 <p>更多内容请直接到<a href="https://github.com/ThreeGayHub/SolarNetwork" target="_blank" rel="noopener">GitHub</a>查看。</p>
 <hr>
